@@ -1,0 +1,11 @@
+CREATE DATABASE vendas_db;
+
+\c vendas_db
+
+CREATE TABLE vendas (
+    id SERIAL PRIMARY KEY,
+    produto VARCHAR(255) NOT NULL,
+    quantidade INTEGER NOT NULL,
+    preco_unitario DECIMAL NOT NULL,
+    data_venda DATE NOT NULL
+);
